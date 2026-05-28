@@ -139,6 +139,22 @@ body > p {
   line-height: 1.5;
 }
 
+.locales-contenedor {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 10px 20px 30px;
+}
+
+.imagen-local {
+  width: 31%;
+  max-width: 360px;
+  min-width: 220px;
+  height: 260px;
+  object-fit: cover;
+}
+
 @media (max-width: 768px) {
   body > h2 {
     font-size: 1.7rem;
@@ -178,5 +194,17 @@ body > p {
 
   .contenido-seccion p {
     font-size: 1.15rem;
+  }
+
+  .locales-contenedor {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .imagen-local {
+    width: 90%;
+    max-width: 430px;
+    min-width: 0;
+    height: auto;
   }
 }
