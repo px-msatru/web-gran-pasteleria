@@ -192,6 +192,19 @@ body > p {
   background-color: hotpink;
 }
 
+.productos-contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
+  gap: 35px;
+  padding: 10px 40px 40px;
+}
+
+.producto-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media (max-width: 768px) {
   body > h2 {
     font-size: 1.7rem;
@@ -248,5 +261,10 @@ body > p {
     max-width: 100%;
     min-width: 0;
     height: auto;
+  }
+
+  .productos-contenedor {
+    grid-template-columns: 1fr;
+    padding: 10px 20px 30px;
   }
 }
